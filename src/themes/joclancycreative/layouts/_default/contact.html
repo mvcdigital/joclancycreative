@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div id="page-contact" class="page row m-0">
+    <div class="page-summary col-xl p-xl-0 text-center text-xl-left">
+        <div>
+            <h1>GET IN TOUCH</h1>
+            <p>
+                Thank you for taking the time to look<br class="d-md-none" /> at my<br class="d-none d-md-inline" /> website. Please do not hesitate<br class="d-md-none" /> to contact<br class="d-none d-md-inline" /> me to find out more, or to<br class="d-md-none" /> discuss how I can<br class="d-none d-md-inline" /> be of assistance to<br class="d-md-none" /> you or your organisation.<br class="d-none d-md-inline" /> I would be delighted to hear from you.
+            </p>
+        </div>
+    </div>
+    <div class="page-detail col-xl p-xl-0 text-center text-xl-left">
+        <div class="contact-form w-100">
+            <form>
+                <div class="form-group">
+                    <label for="name" class="h3">NAME</label>
+                    <input type="text" name="name" class="form-control form-control-lg" />
+                </div>
+                <div class="form-group">
+                    <label for="email" class="h3">EMAIL</label>
+                    <input type="email" name="email" class="form-control form-control-lg" />
+                </div>
+                <div class="form-group mb-5">
+                    <label for="name" class="h3">MESSAGE</label>
+                    <textarea name="message" rows="3" class="form-control form-control-lg"></textarea>
+                </div>
+                <input type="submit" value="SEND" class="button bg-light" />
+            </form>
+        </div>
+    </div>
+</div>
+{{ end }}

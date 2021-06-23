@@ -1,0 +1,6 @@
+baseURL = "https://joclancycreative.co.uk/"
+languageCode = "en-gb"
+title = "Jo Clancy"
+theme = "joclancycreative"
+relativeURLs = true
+paginate = 9

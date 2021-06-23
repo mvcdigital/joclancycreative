@@ -1,0 +1,13 @@
+{{ $bgCls := cond (eq .Params.background "full") "bg-light" "bg-white" }}
+<!doctype html>
+<html lang="en" class="h-100">
+{{- partial "head.html" . -}}
+<body class="h-100 {{$bgCls}}">
+    {{- partial "header.html" . -}}
+    <div id="content" class="h-100">
+        {{- block "main" . }}{{- end }}
+    </div>
+    {{- partial "footer.html" . -}}
+    {{- partial "scripts.html" . -}}
+</body>
+</html>

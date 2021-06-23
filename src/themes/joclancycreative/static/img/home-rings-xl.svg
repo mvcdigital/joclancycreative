@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_21" data-name="Rectangle 21" width="1920" height="1080" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+    <g id="Background_rings" data-name="Background rings" transform="translate(-557.027 -267.062)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="722.582" cy="722.582" r="722.582" transform="translate(300.785 44.853)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="722.582" cy="722.582" r="722.582" transform="translate(300.111 76.664)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="722.582" cy="722.582" r="722.582" transform="translate(300.785 5.333)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="722.582" cy="722.582" r="722.582" transform="translate(342.779 76.664)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="Background_rings-2" data-name="Background rings" transform="translate(962.389 787.896)">
+      <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="480.068" cy="480.068" r="480.068" transform="translate(300.559 31.589)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="Ellipse_2-2" data-name="Ellipse 2" cx="480.068" cy="480.068" r="480.068" transform="translate(300.111 52.724)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="Ellipse_3-2" data-name="Ellipse 3" cx="480.068" cy="480.068" r="480.068" transform="translate(300.559 5.333)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="Ellipse_4-2" data-name="Ellipse 4" cx="480.068" cy="480.068" r="480.068" transform="translate(328.459 52.724)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

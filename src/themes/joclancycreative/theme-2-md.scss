@@ -1,0 +1,16 @@
+@include media-breakpoint-up(md) {   
+  .page-summary {
+    margin-top: 0;
+    padding: 0;
+
+    p {
+      font-size: 32px;
+      line-height: 39px;
+      margin-bottom: 40px;
+    }    
+  }
+
+  .contact-form {
+    max-width: 75%;
+  }
+}

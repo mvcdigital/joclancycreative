@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_52" data-name="Path 52" d="M0,15.827H30v-30H0Z" transform="translate(0 14.173)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Insta" transform="translate(0 14.173)">
+    <g id="Group_6" data-name="Group 6" transform="translate(0 -14.173)" clip-path="url(#clip-path)">
+      <g id="Group_5" data-name="Group 5" transform="translate(-0.001 0)">
+        <path id="Path_51" data-name="Path 51" d="M12.768,0h-18.4a5.8,5.8,0,0,0-5.8,5.8V24.2a5.8,5.8,0,0,0,5.8,5.8h18.4a5.8,5.8,0,0,0,5.8-5.8V5.8a5.8,5.8,0,0,0-5.8-5.8m1.664,3.459.663,0V8.539l-5.067.017L10.01,3.474ZM-.715,11.921a5.271,5.271,0,1,1-1,3.08,5.281,5.281,0,0,1,1-3.08M15.645,24.2a2.879,2.879,0,0,1-2.877,2.874h-18.4A2.877,2.877,0,0,1-8.511,24.2V11.921h4.479a8.157,8.157,0,0,0-.6,3.08,8.2,8.2,0,1,0,15.8-3.08h4.481Z" transform="translate(11.434 0)" fill="#102133"/>
+      </g>
+    </g>
+  </g>
+</svg>

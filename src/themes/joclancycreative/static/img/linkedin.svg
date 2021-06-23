@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_56" data-name="Path 56" d="M0,15.827H30v-30H0Z" transform="translate(0 14.173)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="LinkedIn" transform="translate(0 14.173)">
+    <path id="Path_53" data-name="Path 53" d="M0,10.528H6.992V-9.449H0Z" transform="translate(0 5.299)" fill="#102133"/>
+    <g id="Group_9" data-name="Group 9" transform="translate(0 -14.173)" clip-path="url(#clip-path)">
+      <g id="Group_7" data-name="Group 7" transform="translate(-0.001 0)">
+        <path id="Path_54" data-name="Path 54" d="M1.847,3.693a3.5,3.5,0,0,0,3.5-3.5,3.5,3.5,0,0,0-3.5-3.5,3.5,3.5,0,1,0,0,7" transform="translate(1.654 3.307)" fill="#102133"/>
+      </g>
+      <g id="Group_8" data-name="Group 8" transform="translate(11.001 10)">
+        <path id="Path_55" data-name="Path 55" d="M10.024,4.753c0-5.4-1.164-9.009-7.455-9.009-3.023,0-5.053,1.124-5.882,2.7H-3.4v-2.7H-8.976v20h5.827V5.83c0-2.614.5-5.146,3.73-5.146C3.767.684,4.023,3.675,4.023,6v9.745h6Z" transform="translate(8.976 4.256)" fill="#102133"/>
+      </g>
+    </g>
+  </g>
+</svg>
