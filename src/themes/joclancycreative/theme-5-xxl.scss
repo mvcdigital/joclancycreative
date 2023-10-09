@@ -1,5 +1,9 @@
 @include media-breakpoint-up(xxl) {
     body {
+      
+    }
+
+    .body-inner {
       padding-top: 172px;
     }
     
@@ -30,11 +34,6 @@
       }
     }
     
-    // #bg-rings {
-    //   background-image: url(/img/home-rings-xl.svg);
-    //   background-size: cover;
-    // }
-  
     .page-detail {
       padding: 0;
 
@@ -62,13 +61,17 @@
       .process h3, .process p {
         margin-bottom: 20px;
       }
+
+      .contact-form {
+        max-width: 75%;
+      }
     }
 
     section {
       margin-bottom: 40px;
     }
 
-    #page-home {
+    .page-home .page {
       padding-left: 280px;
   
       p {

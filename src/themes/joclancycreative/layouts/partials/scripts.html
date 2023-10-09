@@ -7,3 +7,33 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+<script>
+    var el = document.getElementById("splash");
+    var scrollCount = 0;
+    
+    function splashIn() {
+        el.className = "splash";
+        scrollCount = 0;
+        document.addEventListener("mousewheel", detectScroll, false);
+        document.addEventListener("DOMMouseScroll", detectScroll, false);
+        setTimeout(splashOut, 5000);
+    }
+    
+    function splashOut() {
+        el.className = "splash splash-out";
+        document.removeEventListener("mousewheel", detectScroll, false);
+        document.removeEventListener("DOMMouseScroll", detectScroll, false);
+        sessionStorage.setItem('splash', 'true');
+    }
+    
+    function detectScroll(e) {
+        scrollCount++;
+        if (scrollCount > 10) {
+            splashOut(el);
+        }
+    }
+
+    if (sessionStorage.getItem('splash') !== "true") {
+        splashIn();
+    }
+</script>

@@ -1,4 +1,4 @@
 ---
 title: "Experience"
-background: "half"
+cls: "page-experience bg-white"
 ---

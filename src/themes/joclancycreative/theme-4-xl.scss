@@ -1,11 +1,62 @@
 @include media-breakpoint-up(xl) {
   body {
-    padding-top: 152px;
-    padding-bottom: 90px;
+    
+    overflow: hidden;
 
     &.bg-white {
       background: linear-gradient(to left, #ffffff 50%, theme-color('light') 50%);
     }
+
+    &.bg-full {
+      background: theme-color('light') !important;
+    }
+  }
+
+  .splash {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: theme-color('primary');
+    background-image: url(/img/splash-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .splash-out {
+    transform: translateY(-200%);
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+  }
+
+  .splash-off {
+    display: none;
+  }
+
+  .splash-rings {
+    height: calc(100% + 200px);
+    background-image: url(/img//splash-rings.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-size: contain;
+    margin-top: -100px;
+  }
+
+  @keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
+  .body-inner {
+    padding-top: 152px;
+    padding-bottom: 90px;
   }
 
   h1 {
@@ -16,6 +67,7 @@
 
   #header {
     padding: 50px 0;
+    background: none;
 
     img {
       height: 52px;
@@ -38,19 +90,24 @@
       margin-left: 0;
     }
   }
-
-  body.bg-white #header {
-      background: linear-gradient(to left, #ffffff 50%, theme-color('light') 50%);
-  }
   
-  // #bg-rings {
-  //   background-image: url(/img/home-rings-xl.svg);
-  //   background-size: cover;
-  //   background-position: bottom left;
-  // }
+  .bg-rings {
+    background-image: url(/img/rings-xl.svg);
+    background-size: 75%;
+    background-position: -52%;
+  }
+
+  .bg-white .bg-rings {
+    background-size: 62%;
+    background-position: -30%;
+  }
 
   #content {
     overflow-y: hidden;
+  }
+
+  .page-summary {
+    background-color: initial;
   }
 
   .page-detail {
@@ -67,7 +124,7 @@
     }
   }
 
-  #page-home {
+  .page-home .page {
     justify-content: left;
     text-align: left;
     padding-left: 200px;
@@ -76,6 +133,28 @@
       font-size: 40px;
       line-height: 53px;
       margin-bottom: 57px;
+    }
+  }
+
+  .rings-right {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    right: -250px;
+    bottom: -550px;
+    background-image: url(/img/home-rings-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+
+    &.rings-right-top {
+      bottom: initial;
+      top: -540px;
+      right: -60px;
+    }
+
+    &.rings-right-dark {
+      background-image: url(/img/bg-rings-right.svg);
     }
   }
 

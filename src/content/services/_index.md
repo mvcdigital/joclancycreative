@@ -1,4 +1,4 @@
 ---
 title: "Services"
-background: "half"
+cls: "page-services bg-white bg-half-light"
 ---

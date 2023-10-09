@@ -1,13 +1,23 @@
-{{ $bgCls := cond (eq .Params.background "full") "bg-light" "bg-white" }}
+{{ $bgCls := .Params.cls }}
 <!doctype html>
 <html lang="en" class="h-100">
 {{- partial "head.html" . -}}
 <body class="h-100 {{$bgCls}}">
-    {{- partial "header.html" . -}}
-    <div id="content" class="h-100">
-        {{- block "main" . }}{{- end }}
+    <div class="body-inner h-100 bg-rings">
+        <div class="h-100">
+            <div class="h-100">
+                {{- partial "header.html" . -}}
+                <div id="content" class="h-100">
+                    {{- block "main" . }}{{- end }}
+                </div>
+                {{- partial "footer.html" . -}}
+            </div>
+        </div>
+    </div>    
+    <div id="splash" class="splash splash-off">
+        <div class="splash-rings"></div>
+        <div class="splash-logo"></div>
     </div>
-    {{- partial "footer.html" . -}}
     {{- partial "scripts.html" . -}}
 </body>
 </html>

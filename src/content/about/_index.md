@@ -1,4 +1,4 @@
 ---
 title: "About"
-background: "half"
+cls: "page-about bg-white"
 ---

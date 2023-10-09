@@ -7784,7 +7784,10 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-body {
+.splash {
+  display: none; }
+
+.body-inner {
   padding-top: 102px;
   padding-bottom: 75px; }
 
@@ -7806,6 +7809,12 @@ h1 {
   #header img {
     height: 42px; }
 
+.bg-rings {
+  background-image: url(/img/rings.svg);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: center; }
+
 #content {
   overflow-y: scroll; }
 
@@ -7813,18 +7822,15 @@ h1 {
   height: 100%; }
 
 .page-summary {
-  margin-top: -30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0; }
+  padding: 10px 0 70px 0;
+  background-color: #f3f0ee; }
   .page-summary p {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 0; }
-
-body.bg-white .page-summary {
-  background-color: #f3f0ee; }
 
 .page-detail {
   display: flex;
@@ -7864,13 +7870,13 @@ textarea {
 label {
   margin-bottom: 0 !important; }
 
-#page-home {
+.page-home .page {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 30px 0; }
-  #page-home p {
+  .page-home .page p {
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 37px; }
@@ -7912,6 +7918,8 @@ form {
   line-height: 17px; }
 
 @media (min-width: 768px) {
+  .bg-rings {
+    background-size: 600px; }
   .page-summary {
     margin-top: 0;
     padding: 0; }
@@ -7924,16 +7932,55 @@ form {
 
 @media (min-width: 1200px) {
   body {
-    padding-top: 152px;
-    padding-bottom: 90px; }
+    overflow: hidden; }
     body.bg-white {
       background: linear-gradient(to left, #ffffff 50%, #f3f0ee 50%); }
+    body.bg-full {
+      background: #f3f0ee !important; }
+  .splash {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #172638;
+    background-image: url(/img/splash-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .splash-out {
+    transform: translateY(-200%);
+    transition-timing-function: ease-in;
+    transition: 0.5s; }
+  .splash-off {
+    display: none; }
+  .splash-rings {
+    height: calc(100% + 200px);
+    background-image: url(/img//splash-rings.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-size: contain;
+    margin-top: -100px; }
+  @keyframes rotate {
+    from {
+      transform: rotate(-360deg); }
+    to {
+      transform: rotate(360deg); } }
+  .body-inner {
+    padding-top: 152px;
+    padding-bottom: 90px; }
   h1 {
     font-size: 42px;
     line-height: 52px;
     margin-bottom: 30px; }
   #header {
-    padding: 50px 0; }
+    padding: 50px 0;
+    background: none; }
     #header img {
       height: 52px; }
     #header > div:nth-child(1) {
@@ -7946,10 +7993,17 @@ form {
       margin-left: 50px; }
     #header a:nth-child(1) {
       margin-left: 0; }
-  body.bg-white #header {
-    background: linear-gradient(to left, #ffffff 50%, #f3f0ee 50%); }
+  .bg-rings {
+    background-image: url(/img/rings-xl.svg);
+    background-size: 75%;
+    background-position: -52%; }
+  .bg-white .bg-rings {
+    background-size: 62%;
+    background-position: -30%; }
   #content {
     overflow-y: hidden; }
+  .page-summary {
+    background-color: initial; }
   .page-detail > div {
     max-width: 550px; }
   .page-detail li {
@@ -7958,14 +8012,30 @@ form {
     background-repeat: no-repeat;
     background-position: 0px 4px;
     padding-left: 30px; }
-  #page-home {
+  .page-home .page {
     justify-content: left;
     text-align: left;
     padding-left: 200px; }
-    #page-home p {
+    .page-home .page p {
       font-size: 40px;
       line-height: 53px;
       margin-bottom: 57px; }
+  .rings-right {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    right: -250px;
+    bottom: -550px;
+    background-image: url(/img/home-rings-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1; }
+    .rings-right.rings-right-top {
+      bottom: initial;
+      top: -540px;
+      right: -60px; }
+    .rings-right.rings-right-dark {
+      background-image: url(/img/bg-rings-right.svg); }
   label {
     margin-bottom: 10px !important; }
   textarea {
@@ -7983,7 +8053,7 @@ form {
       width: 30px; } }
 
 @media (min-width: 1640px) {
-  body {
+  .body-inner {
     padding-top: 172px; }
   h1 {
     font-size: 60px;
@@ -8014,11 +8084,13 @@ form {
       line-height: 24px; }
     .page-detail .process h3, .page-detail .process p {
       margin-bottom: 20px; }
+    .page-detail .contact-form {
+      max-width: 75%; }
   section {
     margin-bottom: 40px; }
-  #page-home {
+  .page-home .page {
     padding-left: 280px; }
-    #page-home p {
+    .page-home .page p {
       font-size: 60px;
       line-height: 73px;
       margin-bottom: 67px; }

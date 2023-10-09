@@ -1,4 +1,4 @@
 ---
 title: "Contact"
-background: "full"
+cls: "page-contact bg-white bg-full"
 ---
