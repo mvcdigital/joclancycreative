@@ -7881,14 +7881,22 @@ label {
     line-height: 37px;
     margin-bottom: 37px; }
 
+.page-contact .page-detail, .page-contact #footer {
+  background-color: #f3f0ee; }
+
 .button {
   display: inline-block;
   border: 1px solid #172638;
+  background: transparent;
   text-decoration: none !important;
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 4px;
-  padding: 9px 30px; }
+  padding: 9px 30px;
+  transition: all 0.4s ease-out; }
+  .button:hover {
+    background-color: #172638;
+    color: white; }
 
 form {
   padding: 0 10px; }
@@ -7990,7 +7998,10 @@ form {
       font-size: 18px;
       line-height: 18px; }
     #header a {
-      margin-left: 50px; }
+      margin-left: 50px;
+      font-weight: normal; }
+      #header a:hover, #header a.active {
+        font-weight: bold; }
     #header a:nth-child(1) {
       margin-left: 0; }
   .bg-rings {
@@ -8020,6 +8031,8 @@ form {
       font-size: 40px;
       line-height: 53px;
       margin-bottom: 57px; }
+  .page-contact .page-detail, .page-contact #footer {
+    background-color: transparent; }
   .rings-right {
     position: absolute;
     width: 800px;

@@ -4,10 +4,10 @@
     </div>
     <div class="col-xl-6 p-xl-0 d-none d-xl-flex align-items-center justify-content-center">
         <span>
-            <a href="/services" class="text-decoration-none">SERVICES</a>
-            <a href="/experience" class="text-decoration-none">EXPERIENCE</a>
-            <a href="/about" class="text-decoration-none">ABOUT</a>
-            <a href="/contact" class="text-decoration-none">CONTACT</a>
+            <a href="/services" class="text-decoration-none {{ cond (eq .Title "Services") "active" "" }}">SERVICES</a>
+            <a href="/experience" class="text-decoration-none {{ cond (eq .Title "Experience") "active" "" }}">EXPERIENCE</a>
+            <a href="/about" class="text-decoration-none {{ cond (eq .Title "About") "active" "" }}">ABOUT</a>
+            <a href="/contact" class="text-decoration-none {{ cond (eq .Title "Contact") "active" "" }}">CONTACT</a>
         </span>
     </div>
 </div>
