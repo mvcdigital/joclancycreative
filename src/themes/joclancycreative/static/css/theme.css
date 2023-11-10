@@ -7887,13 +7887,13 @@ label {
 .button {
   display: inline-block;
   border: 1px solid #172638;
+  color: #172638;
   background: transparent;
   text-decoration: none !important;
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 4px;
-  padding: 9px 30px;
-  transition: all 0.4s ease-out; }
+  padding: 9px 30px; }
   .button:hover {
     background-color: #172638;
     color: white; }
@@ -8033,6 +8033,8 @@ form {
       margin-bottom: 57px; }
   .page-contact .page-detail, .page-contact #footer {
     background-color: transparent; }
+  .button {
+    transition: all 0.4s ease-out; }
   .rings-right {
     position: absolute;
     width: 800px;

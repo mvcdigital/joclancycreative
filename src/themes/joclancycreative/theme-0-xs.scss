@@ -135,13 +135,13 @@ h1 {
   .button {
     display: inline-block;
     border: 1px solid theme_color('primary');
+    color: theme_color('primary');
     background: transparent;
     text-decoration: none !important;
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 4px;
     padding: 9px 30px;
-    transition: all 0.4s ease-out;
 
     &:hover {
       background-color: theme_color('primary');

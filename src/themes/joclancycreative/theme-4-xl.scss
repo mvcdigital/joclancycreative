@@ -143,6 +143,10 @@
   .page-contact .page-detail, .page-contact #footer  {
     background-color: transparent;
   }
+  
+  .button {
+    transition: all 0.4s ease-out;
+  }
 
   .rings-right {
     position: absolute;
