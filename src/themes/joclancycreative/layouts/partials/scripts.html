@@ -33,6 +33,18 @@
         }
     }
 
+    function toggleFlyout() {
+        var flyoutActive = document.getElementById('flyout').className === 'active';
+        if (flyoutActive) {
+            document.getElementById('flyout').className = "";
+            document.getElementById('header').className="row";
+            return;
+        }
+
+        document.getElementById('flyout').className = "active";
+        document.getElementById('header').className="row flyout-on";
+    }
+
     if (sessionStorage.getItem('splash') !== "true") {
         splashIn();
     }

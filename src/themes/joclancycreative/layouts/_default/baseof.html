@@ -13,7 +13,17 @@
                 {{- partial "footer.html" . -}}
             </div>
         </div>
-    </div>    
+    </div>
+    <div id="flyout">
+        <a href="/services" class="text-decoration-none {{ cond (eq .Title "Services") "active" "" }}">SERVICES</a>
+        <a href="/experience" class="text-decoration-none {{ cond (eq .Title "Experience") "active" "" }}">EXPERIENCE</a>
+        <a href="/about" class="text-decoration-none {{ cond (eq .Title "About") "active" "" }}">ABOUT</a>
+        <a href="/contact" class="text-decoration-none {{ cond (eq .Title "Contact") "active" "" }}">CONTACT</a>
+        <div class="social">
+            <a href="https://www.instagram.com/joclancy_creative"><img src="/img/insta.svg" alt="Instagram" /></a>
+            <a href="https://www.linkedin.com/in/jo-clancy-10714726"><img src="/img/linkedin.svg" alt="LinkedIn" /></a>
+        </div>
+    </div>
     <div id="splash" class="splash splash-off">
         <div class="splash-rings"></div>
         <div class="splash-logo"></div>

@@ -7788,8 +7788,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: none; }
 
 .body-inner {
-  padding-top: 102px;
-  padding-bottom: 75px; }
+  padding-top: 102px; }
 
 h1 {
   font-size: 30px;
@@ -7805,9 +7804,48 @@ h1 {
   left: 0;
   background-color: #f3f0ee;
   padding: 30px 0;
-  z-index: 1; }
+  z-index: 2; }
   #header img {
     height: 42px; }
+  #header #burger, #header #burger-close {
+    position: absolute;
+    right: 40px;
+    rotate: 0deg;
+    transition: all 0.4s ease-out; }
+  #header #burger-close {
+    opacity: 0; }
+  #header.flyout-on #burger {
+    opacity: 0;
+    rotate: 180deg; }
+  #header.flyout-on #burger-close {
+    opacity: 100;
+    rotate: 180deg; }
+
+#flyout {
+  position: absolute;
+  top: -100%;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  background: #f3f0ee !important;
+  display: block;
+  z-index: 1;
+  margin-top: 100px;
+  padding-top: 20px;
+  transition: all 0.4s ease-out; }
+  #flyout.active {
+    top: 0%;
+    bottom: 0%; }
+  #flyout a {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px; }
+  #flyout .social {
+    text-align: center;
+    padding-top: 40px; }
+    #flyout .social a {
+      display: inline-block;
+      margin: 0 20px; }
 
 .bg-rings {
   background-image: url(/img/rings.svg);
@@ -7875,7 +7913,7 @@ label {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 30px 0; }
+  padding-bottom: 100px; }
   .page-home .page p {
     font-size: 30px;
     line-height: 37px;
@@ -7904,7 +7942,7 @@ form {
 #footer {
   position: fixed;
   right: 0;
-  bottom: 40px;
+  bottom: 0;
   left: 0;
   padding: 10px;
   font-size: 10px;
