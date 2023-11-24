@@ -31,6 +31,10 @@
     display: none;
   }
 
+  .splash-off {
+    display: none;
+  }
+
   @keyframes rotate{
     from{ transform: rotate(-360deg); }
     to{ transform: rotate(360deg); }

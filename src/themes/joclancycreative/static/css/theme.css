@@ -8041,6 +8041,8 @@ form {
     background-position: center center; }
   .splash-logo {
     display: none; }
+  .splash-off {
+    display: none; }
   @keyframes rotate {
     from {
       transform: rotate(-360deg); }
