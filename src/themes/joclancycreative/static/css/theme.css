@@ -7917,7 +7917,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px; }
+  padding: 70px 10px; }
   .page-detail h3, .page-detail .h3 {
     font-size: 18px;
     line-height: 23px;
@@ -7962,7 +7962,11 @@ label {
     line-height: 37px;
     margin-bottom: 37px; }
 
-.page-contact .page-detail, .page-contact #footer {
+.page-contact .page-detail {
+  background-color: #f3f0ee;
+  padding: 10px 10px 70px 10px; }
+
+.page-contact #footer {
   background-color: #f3f0ee; }
 
 .button {
@@ -8084,14 +8088,16 @@ form {
     overflow-y: hidden; }
   .page-summary {
     background-color: initial; }
-  .page-detail > div {
-    max-width: 550px; }
-  .page-detail li {
-    margin-bottom: 40px;
-    background-image: url(/img/bullet.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 4px;
-    padding-left: 30px; }
+  .page-detail {
+    padding: 10px; }
+    .page-detail > div {
+      max-width: 550px; }
+    .page-detail li {
+      margin-bottom: 40px;
+      background-image: url(/img/bullet.svg);
+      background-repeat: no-repeat;
+      background-position: 0px 4px;
+      padding-left: 30px; }
   .page-home .page {
     justify-content: left;
     text-align: left;
